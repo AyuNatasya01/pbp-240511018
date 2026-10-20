@@ -38,19 +38,7 @@ Kalau aplikasinya perlu berbagi data antar pengguna, misalnya aplikasi kasir di 
 
 Untuk data yang berasal dari internet, aplikasi mobile biasanya memanggil back-end lewat REST API. Artinya, satu layanan bisa punya satu back-end yang sama dan dipakai oleh versi web, versi mobile, bahkan versi desktop sekaligus.
 
-### 3. Cara distribusi
-
-**Web.** Aplikasi di-deploy ke server atau layanan hosting, lalu diberi alamat domain. Pengguna cukup membuka alamat itu di browser tanpa memasang apa pun. Kalau ada perbaikan atau fitur baru, developer hanya memperbarui di server dan semua pengguna langsung memakai versi terbarunya. Hal ini membuat proses distribusi web menjadi yang paling sederhana dibanding dua platform lain.
-
-**Desktop.** Distribusi biasanya lewat file installer, misalnya .exe atau .msi di Windows, .dmg di macOS, dan .deb di beberapa distribusi Linux. File ini diunduh dari situs resmi pembuatnya. Selain itu, ada juga toko aplikasi seperti Microsoft Store atau Mac App Store.
-
-Pembaruan dilakukan dengan menjalankan installer versi baru atau lewat fitur pembaruan otomatis (auto-update) yang dibuat di dalam aplikasinya. Supaya tidak dianggap berbahaya oleh sistem, installer yang dibagikan sebaiknya ditandatangani secara digital (code signing).
-
-**Mobile.** Aplikasi didistribusikan lewat toko resmi, yaitu Google Play Store untuk Android dan App Store untuk iOS. Developer harus mendaftar akun developer, mengunggah aplikasi, lalu menunggu proses review dari pengelola toko sebelum aplikasi bisa diunduh publik.
-
-Di Android, aplikasi juga bisa dibagikan sebagai file APK dan dipasang langsung, tetapi pengguna harus mengizinkan pemasangan dari sumber di luar toko. Di iOS cara seperti ini jauh lebih terbatas.
-
-### 4. Keunggulan
+### 3. Keunggulan
 
 **Web.**
 - Bisa dibuka dari perangkat apa saja yang punya browser dan koneksi internet, baik laptop, komputer kampus, maupun ponsel.
@@ -72,7 +60,7 @@ Di Android, aplikasi juga bisa dibagikan sebagai file APK dan dipasang langsung,
 - Jumlah pengguna ponsel sangat besar, jadi jangkauan pasarnya luas.
 - Dengan Flutter atau React Native, satu kode bisa dipakai untuk Android dan iOS sehingga lebih hemat waktu dan biaya.
 
-### 5. Keterbatasan
+### 4. Keterbatasan
 
 **Web.**
 - Hampir selalu butuh koneksi internet, dan kalau koneksi lambat pengalaman pengguna ikut terganggu.
@@ -95,7 +83,7 @@ Di Android, aplikasi juga bisa dibagikan sebagai file APK dan dipasang langsung,
 - Pengembangan aplikasi iOS memerlukan perangkat Apple (macOS) dengan Xcode.
 - Kalau membuat versi native, Android dan iOS ditulis terpisah sehingga biaya dan waktunya lebih besar.
 
-### 6. Contoh aplikasi
+### 5. Contoh aplikasi
 
 **Web.**
 - Tokopedia (situs web) untuk belanja online.
