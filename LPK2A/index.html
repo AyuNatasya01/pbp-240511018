@@ -23,6 +23,7 @@
         <div class="nav-links" id="nav-links">
             <a href="#tentang">Tentang</a>
             <a href="#keahlian">Keahlian</a>
+            <a href="#proyek">Proyek</a>
             <a href="#pendidikan">Pendidikan</a>
             <a href="#kontak">Kontak</a>
         </div>
@@ -32,28 +33,27 @@
     <main>
         <section id="tentang" class="reveal">
             <h2>Tentang</h2>
-            <p>Saya adalah mahasiswa semester 5 yang tertarik pada pengembangan aplikasi multi-platform.</p>
+            <p>Saya mahasiswa semester 5 Teknik Informatika yang tertarik pada pengembangan aplikasi web dan multi-platform. Saya terbiasa membangun aplikasi web berbasis Laravel dan sudah mengerjakan beberapa proyek nyata untuk kebutuhan perusahaan.</p>
             <div class="stats">
                 <div class="stat"><span class="num" data-target="5">0</span><small>Semester</small></div>
-                <div class="stat"><span class="num" data-target="4">0</span><small>Bahasa Pemrograman</small></div>
+                <div class="stat"><span class="num" data-target="5">0</span><small>Bahasa &amp; Framework</small></div>
+                <div class="stat"><span class="num" data-target="3">0</span><small>Proyek</small></div>
             </div>
         </section>
 
         <section id="keahlian" class="reveal">
             <h2>Keahlian</h2>
-            <div class="cards">
-                <div class="card">HTML & CSS</div>
-                <div class="card">JavaScript</div>
-                <div class="card">Java</div>
-                <div class="card">Kotlin</div>
-            </div>
             <div class="skills">
                 <div class="skill">
-                    <div class="skill-head"><span>HTML & CSS</span><span>85%</span></div>
+                    <div class="skill-head"><span>HTML &amp; CSS</span><span>85%</span></div>
                     <div class="bar"><div class="fill" data-level="85"></div></div>
                 </div>
                 <div class="skill">
                     <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+                    <div class="bar"><div class="fill" data-level="75"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head"><span>Laravel</span><span>75%</span></div>
                     <div class="bar"><div class="fill" data-level="75"></div></div>
                 </div>
                 <div class="skill">
@@ -64,6 +64,30 @@
                     <div class="skill-head"><span>Kotlin</span><span>60%</span></div>
                     <div class="bar"><div class="fill" data-level="60"></div></div>
                 </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="reveal">
+            <h2>Proyek</h2>
+            <div class="projects">
+                <article class="project">
+                    <span class="icon">🚪</span>
+                    <h3>Aplikasi Pintu</h3>
+                    <p>Aplikasi web untuk mengelola alur bisnis pintu: permintaan, PO, produksi, distribusi, pembayaran, hingga riwayat mutasi.</p>
+                    <div class="tags"><span>Laravel</span><span>MySQL</span><span>Blade</span></div>
+                </article>
+                <article class="project">
+                    <span class="icon">📋</span>
+                    <h3>SIPP Tulus Asih Group</h3>
+                    <p>Sistem informasi pengajuan dan persetujuan: permintaan SPK, pengajuan pembayaran, dana jaminan, serta penugasan verifikator.</p>
+                    <div class="tags"><span>Laravel</span><span>MySQL</span><span>JavaScript</span></div>
+                </article>
+                <article class="project">
+                    <span class="icon">🏢</span>
+                    <h3>Profil Web Perusahaan</h3>
+                    <p>Website profil perusahaan dengan katalog produk perumahan dan fitur simulasi KPR untuk pengunjung.</p>
+                    <div class="tags"><span>Laravel</span><span>HTML &amp; CSS</span><span>JavaScript</span></div>
+                </article>
             </div>
         </section>
 
@@ -82,7 +106,7 @@
             <h2>Kontak</h2>
             <ul>
                 <li>Email: <a href="mailto:firlynatasya1@gmail.com">firlynatasya1@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/AyuNatasya01">@AyuNatasya01</a></li>
+                <li>GitHub: <a href="https://github.com/AyuNatasya01" target="_blank" rel="noopener">@AyuNatasya01</a></li>
             </ul>
 
             <form id="contact-form" novalidate>
@@ -143,7 +167,7 @@
         );
 
         // ===== Efek mengetik =====
-        const roles = ['Web Developer', 'Android Developer', 'Mahasiswa Informatika', 'Pembelajar Cepat'];
+        const roles = ['Web Developer', 'Laravel Developer', 'Android Developer', 'Mahasiswa Informatika', 'Pembelajar Cepat'];
         const typed = document.getElementById('typed');
         let r = 0, c = 0, deleting = false;
 
@@ -172,7 +196,7 @@
 
             let current = '';
             sections.forEach(s => {
-                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+                if (window.scrollY >= s.offsetTop - 140) current = s.id;
             });
             links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
         }
