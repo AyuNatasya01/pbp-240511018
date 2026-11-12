@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Ayu Natasya, mahasiswa Teknik Informatika UMC">
+    <title>Profil Ayu Natasya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+
+    <header>
+        <img src="assets/rosetta.jpg" alt="Foto Profil" class="foto">
+        <h1>Ayu Natasya</h1>
+        <p>Mahasiswa Teknik Informatika UMC</p>
+        <p class="typing">Saya seorang <span id="typed"></span><span class="cursor">|</span></p>
+        <a href="#kontak" class="btn">Hubungi Saya</a>
+    </header>
+
+    <nav id="navbar">
+        <button id="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#tentang">Tentang</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <button id="theme-toggle" aria-label="Ganti tema">🌙</button>
+    </nav>
+
+    <main>
+        <section id="tentang" class="reveal">
+            <h2>Tentang</h2>
+            <p>Saya mahasiswa semester 5 Teknik Informatika yang tertarik pada pengembangan aplikasi web dan multi-platform. Saya terbiasa membangun aplikasi web berbasis Laravel dan sudah mengerjakan beberapa proyek nyata untuk kebutuhan perusahaan.</p>
+            <div class="stats">
+                <div class="stat"><span class="num" data-target="5">0</span><small>Semester</small></div>
+                <div class="stat"><span class="num" data-target="5">0</span><small>Bahasa &amp; Framework</small></div>
+                <div class="stat"><span class="num" data-target="3">0</span><small>Proyek</small></div>
+            </div>
+        </section>
+
+        <section id="keahlian" class="reveal">
+            <h2>Keahlian</h2>
+            <div class="cards">
+                <div class="card">Web Frontend<small>HTML, CSS, JavaScript</small></div>
+                <div class="card">Web Backend<small>Laravel, PHP</small></div>
+                <div class="card">Mobile<small>Kotlin, Android</small></div>
+                <div class="card">Desktop<small>Java, JavaFX</small></div>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-head"><span>HTML &amp; CSS</span><span>85%</span></div>
+                    <div class="bar"><div class="fill" data-level="85"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+                    <div class="bar"><div class="fill" data-level="75"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head"><span>Laravel</span><span>75%</span></div>
+                    <div class="bar"><div class="fill" data-level="75"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head"><span>Java</span><span>70%</span></div>
+                    <div class="bar"><div class="fill" data-level="70"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head"><span>Kotlin</span><span>60%</span></div>
+                    <div class="bar"><div class="fill" data-level="60"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="reveal">
+            <h2>Proyek</h2>
+            <div class="projects">
+                <article class="project">
+                    <span class="icon">🚪</span>
+                    <h3>Aplikasi Pintu</h3>
+                    <p>Aplikasi web untuk mengelola alur bisnis pintu: permintaan, PO, produksi, distribusi, pembayaran, hingga riwayat mutasi.</p>
+                    <div class="tags"><span>Laravel</span><span>MySQL</span><span>Blade</span></div>
+                </article>
+                <article class="project">
+                    <span class="icon">📋</span>
+                    <h3>SIPP Tulus Asih Group</h3>
+                    <p>Sistem informasi pengajuan dan persetujuan: permintaan SPK, pengajuan pembayaran, dana jaminan, serta penugasan verifikator.</p>
+                    <div class="tags"><span>Laravel</span><span>MySQL</span><span>JavaScript</span></div>
+                </article>
+                <article class="project">
+                    <span class="icon">🏢</span>
+                    <h3>Profil Web Perusahaan</h3>
+                    <p>Website profil perusahaan dengan katalog produk perumahan dan fitur simulasi KPR untuk pengunjung.</p>
+                    <div class="tags"><span>Laravel</span><span>HTML &amp; CSS</span><span>JavaScript</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="pendidikan" class="reveal">
+            <h2>Pendidikan</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <span class="tl-date">2023 - Sekarang</span>
+                    <h3>S1 Teknik Informatika</h3>
+                    <p>Universitas Muhammadiyah Cirebon (UMC)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="reveal">
+            <h2>Kontak</h2>
+            <ul>
+                <li>Email: <a href="mailto:firlynatasya1@gmail.com">firlynatasya1@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/AyuNatasya01" target="_blank" rel="noopener">@AyuNatasya01</a></li>
+            </ul>
+
+            <form id="contact-form" novalidate>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" required>
+                <small class="error" id="err-nama"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <small class="error" id="err-email"></small>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" rows="5" required></textarea>
+                <small class="error" id="err-pesan"></small>
+
+                <button type="submit" class="btn">Kirim Pesan</button>
+                <p id="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Ayu Natasya. All rights reserved.</p>
+    </footer>
+
+    <button id="to-top" aria-label="Kembali ke atas">↑</button>
+
+    <script>
+        // ===== Tema gelap / terang =====
+        const root = document.documentElement;
+        const themeBtn = document.getElementById('theme-toggle');
+
+        function applyTheme(theme) {
+            root.setAttribute('data-theme', theme);
+            themeBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        let savedTheme = null;
+        try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+        applyTheme(savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+
+        themeBtn.addEventListener('click', () => {
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+
+        // ===== Menu mobile =====
+        const menuBtn = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            menuBtn.setAttribute('aria-expanded', open);
+        });
+        navLinks.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => navLinks.classList.remove('open'))
+        );
+
+        // ===== Efek mengetik =====
+        const roles = ['Web Developer', 'Laravel Developer', 'Android Developer', 'Mahasiswa Informatika', 'Pembelajar Cepat'];
+        const typed = document.getElementById('typed');
+        let r = 0, c = 0, deleting = false;
+
+        function type() {
+            const word = roles[r];
+            typed.textContent = word.slice(0, c);
+            if (!deleting && c < word.length) { c++; return setTimeout(type, 90); }
+            if (!deleting) { deleting = true; return setTimeout(type, 1200); }
+            if (c > 0) { c--; return setTimeout(type, 45); }
+            deleting = false;
+            r = (r + 1) % roles.length;
+            setTimeout(type, 300);
+        }
+        type();
+
+        // ===== Scroll: progress bar, tombol ke atas, nav aktif =====
+        const progress = document.getElementById('progress-bar');
+        const toTop = document.getElementById('to-top');
+        const sections = document.querySelectorAll('main section');
+        const links = document.querySelectorAll('.nav-links a');
+
+        function onScroll() {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            progress.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+            toTop.classList.toggle('show', window.scrollY > 400);
+
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 140) current = s.id;
+            });
+            links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // ===== Animasi muncul saat scroll + skill bar + counter =====
+        function animateCount(el) {
+            const target = +el.dataset.target;
+            let n = 0;
+            const step = Math.max(1, Math.ceil(target / 30));
+            const t = setInterval(() => {
+                n = Math.min(n + step, target);
+                el.textContent = n;
+                if (n >= target) clearInterval(t);
+            }, 40);
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                el.classList.add('visible');
+                el.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.level + '%');
+                el.querySelectorAll('.num').forEach(animateCount);
+                observer.unobserve(el);
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // ===== Form kontak (validasi + buka aplikasi email) =====
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nama = form.nama.value.trim();
+            const email = form.email.value.trim();
+            const pesan = form.pesan.value.trim();
+            let ok = true;
+
+            const setErr = (id, msg) => { document.getElementById(id).textContent = msg; if (msg) ok = false; };
+            setErr('err-nama', nama ? '' : 'Nama wajib diisi.');
+            setErr('err-email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Email tidak valid.');
+            setErr('err-pesan', pesan.length >= 10 ? '' : 'Pesan minimal 10 karakter.');
+
+            if (!ok) { status.textContent = ''; return; }
+
+            const subject = encodeURIComponent('Pesan dari ' + nama);
+            const body = encodeURIComponent(pesan + '\n\n— ' + nama + ' (' + email + ')');
+            window.location.href = 'mailto:firlynatasya1@gmail.com?subject=' + subject + '&body=' + body;
+            status.textContent = 'Membuka aplikasi email Anda...';
+            form.reset();
+        });
+
+        // ===== Tahun otomatis di footer =====
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
